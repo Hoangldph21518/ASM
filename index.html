@@ -7,17 +7,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Vite App</title>
 	<script src="https://cdn.tailwindcss.com"></script>
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 	<script type="module" src="/main.js"></script>
-	<div class="max-w-7xl mx-auto px-5 py-5 ">
-		<ul id="main-menu" class=" hidden md:flex justify-end space-x-8">
-			<li><a href="" class=" font-bold text-black hover:text-white hover:bg-black p-3">Works </a></li>
-			<li><a href="" class=" font-bold text-black hover:text-white hover:bg-black p-3">Blog</a></li>
-			<li><a href="" class=" font-bold text-black hover:text-white hover:bg-black p-3">Contact</a></li>
-		</ul>
-	</div>
+
+	<div class=" max-w-7xl md:m-auto m-4 py-4">
+		<div class="grid justify-items-stretch "> 
+			<div class="justify-self-end"><button id="button" class="text-4xl inline-block md:hidden text-right ml-auto "><i class='bx bx-menu'></i></button></div>
+			<ul id="main-menu" class="justify-self-start md:justify-self-end py-4  hidden md:flex justify-end md:space-x-16">
+				<li class="font-bold hover:text-red-600 text-2xl "><a href="trang3.html">Works</a></li>
+				<li class="font-bold  hover:text-red-600 text-2xl"><a href="trang2.html">Blog</a></li>
+				<li class="font-bold  hover:text-red-600 text-2xl"><a href="trang4.html">Contact</a></li>
+			</ul>
+		</div>
+		
+       
+    </div>
 
 	<div class="max-w-7xl mx-auto px-5 pt-36">
 		<div class="grid md:grid-cols-3 gap-8 flex">
@@ -33,7 +40,7 @@
 			</div>
 
 			<div class="order-1 text-right md:text-right text-center md:col-span-1 md:order-2 ">
-				<img src="IMG/duyhoang.jpg" alt="" class=" ml-auto rounded-full w-64 ml-15 ">
+				<img src="IMG/duyhoang.jpg" alt="" class=" ml-auto rounded-full w-70 ml-15 ">
 			</div>
 		</div>
 	</div>
@@ -46,67 +53,90 @@
 					<p class="hidden md:block text-right text-sky-500 ">View all</p>
 				</div>
 
-			<div class=" gird md:grid-cols-2 gap-8 py-4 md:flex ">
-				<div class=" bg-white p-4 ">
-					<h2 class="font-bold text-4xl">Making a design system from scratch</h2>
-					<div class="pt-4"> <span class="text-2xl">12 Feb 2020</span> <span class=" text-2xl">|</span> <span class="text-2xl pl-4" >Design, Pattern </span> </div>
-					<p class="text-2xl pt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-						Velit officia consequat
-						duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-				</div> 
+				<div class=" gird md:grid-cols-2 gap-8 py-4 md:flex ">
+					<div class=" bg-white m-4 p-4 ">
+						<h2 class="font-bold text-4xl">Making a design system from scratch</h2>
+						<div class="pt-4"> <span class="text-2xl">12 Feb 2020</span> <span class=" text-2xl">|</span>
+							<span class="text-2xl pl-4">Design, Pattern </span> </div>
+						<p class="text-2xl pt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+							sint.
+							Velit officia consequat
+							duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+					</div>
 
-				<div class=" bg-white p-4 ">
-					<h2 class="font-bold text-4xl">Making a design system from scratch</h2>
-					<div class="pt-4"> <span class="text-2xl">12 Feb 2020</span> <span class=" text-2xl">|</span> <span class="text-2xl pl-4" >Design, Pattern </span> </div>
-					<p class="text-2xl pt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-						Velit officia consequat
-						duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+					<div class=" bg-white m-4 p-4 ">
+						<h2 class="font-bold text-4xl">Making a design system from scratch</h2>
+						<div class="pt-4"> <span class="text-2xl">12 Feb 2020</span> <span class=" text-2xl">|</span>
+							<span class="text-2xl pl-4">Design, Pattern </span> </div>
+						<p class="text-2xl pt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+							sint.
+							Velit officia consequat
+							duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+					</div>
 				</div>
-			</div>		
+				</div>
+			</div>
 	</section>
 
 
 	<section>
 		<div class="max-w-7xl mx-auto px-5 ">
 			<h2 class=" text-2xl">Featured works</h2>
-			<div class="grid md:grid-cols-2 gap-8 py-4">
-				<img src="IMG/Rectangle 30.svg" alt="" class="py-8 ">
-				<div>
+			<div class="grid md:grid-cols-3 gap-8 py-4">
+				<img src="IMG/Rectangle 30.svg" alt="" class="py-8 col-span-1 w-96 ">
+				<div class="col-span-2">
 					<h2 class="font-bold text-4xl py-4 ">Designing Dashboards</h2>
-					<span class="bg-black text-white px-4 text-xl rounded-full">2020</span> <span class="text-xl text-blue-300 px-4 py-4">Dashboard</span>
-					<h2 class="py-6 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+					<span class="bg-black text-white px-4 text-xl rounded-full">2020</span> <span
+						class="text-xl text-blue-300 px-4 py-4">Dashboard</span>
+					<h2 class="py-6 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+						Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+					</h2>
 				</div>
 			</div>
 		</div>
+		<hr>
 
 		<div class="max-w-7xl mx-auto px-5 ">
-			
-			<div class="grid md:grid-cols-2 gap-8 py-4">
-				<img src="IMG/Rectangle 32 (1).svg" alt="" class="py-8">
-				<div class="">
+
+			<div class="grid md:grid-cols-3 gap-8 py-4">
+				<img src="IMG/Rectangle 32 (1).svg" alt="" class="py-8 col-span-1  w-96 ">
+				<div class="col-span-2">
 					<h2 class="font-bold text-4xl py-4 ">Vibrant Portraits of 2020</h2>
-					<span class="bg-black text-white px-4 text-xl rounded-full">2018</span> <span class="text-4xl font-bold px-4">Vibrant Portraits of 2020</span>
-					<h2 class="py-6 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+					<span class="bg-black text-white px-4 text-xl rounded-full">2018</span> <span
+						class="text-4xl font-bold px-4">Vibrant Portraits of 2020</span>
+					<h2 class="py-6 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+						Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+					</h2>
 				</div>
 			</div>
 		</div>
-
+		<hr>
 		<div class="max-w-7xl mx-auto px-5 ">
-			<div class="grid md:grid-cols-2 gap-8 py-4">
-				<img src="IMG/Rectangle 34.svg" alt="" class="py-8 ">
-				<div>
+			<div class="grid md:grid-cols-3 gap-8 py-4">
+				<img src="IMG/Rectangle 34.svg" alt="" class="py-8 col-span-1  w-96 ">
+				<div class="col-span-2">
 					<h2 class="font-bold text-4xl py-4 ">36 Days of Malayalam type</h2>
-					<span class="bg-black text-white px-4 text-xl rounded-full">2018 </span> <span class="text-xl text-blue-300 px-4 py-4">Typography</span>
-					<h2 class="py-6 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+					<span class="bg-black text-white px-4 text-xl rounded-full">2018 </span> <span
+						class="text-xl text-blue-300 px-4 py-4">Typography</span>
+					<h2 class="py-6 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+						Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+					</h2>
 				</div>
 			</div>
 		</div>
+		<hr>
 
 	</section>
 
 	<section>
-		<div class="max-w-7xl mx-auto px-5">
-			<h2 class="text-center p-6">Copyright ©2020 All rights reserved </h2>
+		<div class="max-w-7xl mx-auto px-5 text-center">
+			<div class="py-4">
+				<a href="" class="text-4xl px-4"><i class='bx bxl-facebook-circle'></i></a>
+				<a href="" class="text-4xl px-4"><i class='bx bxl-instagram'></i></a>
+				<a href="" class="text-4xl px-4"><i class='bx bxl-twitter'></i></a>
+				<a href="" class="text-4xl px-4"><i class='bx bxl-linkedin-square'></i></a>
+			</div>
+			<h2 class="text-center p-4">Copyright ©2020 All rights reserved </h2>
 		</div>
 	</section>
 
